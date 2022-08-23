@@ -11,7 +11,6 @@ export default function App() {
     fetch(API_URL)
       .then(res => res.json())
       .then(data => setCats(prev => prev.concat(data)))
-    // console.log(cats)
   }, [page])
 
   return (
